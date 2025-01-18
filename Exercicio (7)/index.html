@@ -6,17 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <script src="Exercicio_1.js"></script>
-    <button id="executeButton">Execute</button>
-    <div id="result"></div>
+    <button onclick="location.href='../index.html'">Indice</button>
+    <button onclick="location.href='../Exercicio (8)/index.html'">Procimo</button>
 
-    <script>
-        document.getElementById('executeButton').addEventListener('click', function() {
-            // Assuming Exercicio_1.js has a function named executeFunction
-            const result = executeFunction();
-            document.getElementById('result').innerText = result;
-        });
-        </script>
-    </body>
-    </html>
+    <div id="Enunciado">
+        <h2>Exercício 7</h2>
+
+    </div>
+
+    <div id="questao">
+        <h4 id="prompt">Prompt</h4>
+        
+        <form id="form">
+            <p>
+                <label for="num">lable:</label>
+                <input type="number" id="num" required>
+            </p>
+            <p>
+                <button type="submit" id="formButton">Exibir</button>
+            </p>
+        </form>
+        <div id="saida"></div>
+    </div>
+    
+    <script src="Exercicio.js"></script>
+</body>
+</html>

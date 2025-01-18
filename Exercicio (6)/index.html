@@ -6,17 +6,41 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <script src="Exercicio_1.js"></script>
-    <button id="executeButton">Execute</button>
-    <div id="result"></div>
+    <button onclick="location.href='../index.html'">Indice</button>
+    <button onclick="location.href='../Exercicio (7)/index.html'">Procimo</button>
 
-    <script>
-        document.getElementById('executeButton').addEventListener('click', function() {
-            // Assuming Exercicio_1.js has a function named executeFunction
-            const result = executeFunction();
-            document.getElementById('result').innerText = result;
-        });
-        </script>
-    </body>
-    </html>
+    <div id="Enunciado">
+        <h2>Exercício 6</h2>
+        <p>Escreva um programa que:</p>
+        <ol>
+            <li>Solicite ao usuário um número inteiro positivo n, que representa o número de termos que ele deseja ver da sequência de Fibonacci.</li>
+            <li>Implemente uma função recursiva chamada fibonacci que receba um número n e retorne os n primeiros termos da sequência de Fibonacci, onde:
+            <ul>
+                <li>Fibonacci(0) = 0</li>
+                <li>Fibonacci(1) = 1</li>
+                <li>Para n > 1: Fibonacci(n) = Fibonacci(n-1) + Fibonacci(n-2)</li>
+            </ul>
+            </li>
+            <li>Exiba os n primeiros termos da sequência de Fibonacci.</li>
+        </ol>
+        <h5>Incompleto</h5>
+    </div>
+
+    <div id="questao">
+        <h4 id="prompt">Digite quantos numeros da sequencia de fibonacci queris ver</h4>
+        
+        <form id="form">
+            <p>
+                <label for="num">n:</label>
+                <input type="number" id="num" required>
+            </p>
+            <p>
+                <button type="submit" id="formButton">Exibir</button>
+            </p>
+        </form>
+        <div id="saida"></div>
+    </div>
+    
+    <script src="Exercicio.js"></script>
+</body>
+</html>
