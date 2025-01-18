@@ -10,29 +10,32 @@
     <button onclick="location.href='../Exercicio (6)/index.html'">Procimo</button>
 
     <div id="Enunciado">
-        
+        <h2>Exercício 5</h2>
+        Elabore um algoritmo que peça para o usuário inserir um número
+        inteiro e realize o seguinte:
+        <ul>
+            <li>Caso o valor seja divisível por 3, imprima “fizz”</li>
+            <li>Caso o valor seja divisível por 5, imprima “buzz”</li>
+            <li>Caso o valor seja divisível por 3 e 5, ao mesmo tempo, imprima “fizzbuzz”</li>
+            <li>Caso contrário, imprima nada.</li>
+        </ul>
     </div>
 
-    <form id="form">
-        <p>
-            <label for="num">Lable</label>
-            <input type="number" id="num" name="num" required>
-        </p>
-    </form>
-
-    <div id="result"></div>
+    <div id="questao">
+        <h4 id="prompt">Diga um numero inteiro</h4>
+        
+        <form id="form">
+            <p>
+                <label for="num">Numero:</label>
+                <input type="number" id="num" required>
+            </p>
+            <p>
+                <button type="submit" id="formButton">Calcular</button>
+            </p>
+        </form>
+        <div id="saida"></div>
+    </div>
     
-    <script src="Exercicio_1.js"></script>
-    <script>
-        document.getElementById('form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            // Get the values from the form inputs
-            const num = parseFloat(document.getElementById('num').value);
-
-            // Assuming Exercicio_1.js has a function named executeFunction that takes a, b, and c as parameters
-            const result = executeFunction(num);
-            document.getElementById('result').innerText = result;
-        });
-    </script>
+    <script src="Exercicio.js"></script>
 </body>
 </html>
